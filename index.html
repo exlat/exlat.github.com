@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Exlat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -39,12 +39,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="#">Exlat</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="https://github.com/exlat/ExLat">Repo</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -55,36 +55,37 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        <h1>Introduction to ExLat Project</h1>
+        <p>LaTeX, being a popular typesetting tool, it would be useful if there is some software that interchange various document formats and LaTeX. This includes both export to latex and import from latex. Potential formats are html, xml, different Google document formats(ICS format of Google calendar), etc.</p>
+
+        <p>ExLat is free software released under <a href="http://www.gnu.org/licenses/gpl.html">GNU GPL License</a></p>
+        <!-- <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p> -->
       </div>
+          <h2>Use Cases</h2>
+           <p>The following use cases are identified.</p>
+            <br />
+           <h2>Google Calendar</h2>
+           <p> As an initial step we are concentrating on exporting Google calendar (ICS format) to LaTeX Table. All the events related to a particular "Summary string" is converted to a Latex table.</p>
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
+            <h2>Image Slides</h2>
+            <p>Suppose we have a sequence of slides in some image format, say .jpg. These slides can be converted to latex-beamer slides.</p>
 
-      <hr>
+            <h2>Research Publication Portals</h2>
+            <p>These days the most preferred format for Researchers to submit their publications is Latex. There are web portals like http://www.ijcaonline.org, www.springerlink.com which maintains details about various papers which collects data from these Latex files. Now the process is done manually. Automation of this would benefit the research community.</p>
 
-      <footer>
-        <p>&copy; Company 2012</p>
-      </footer>
 
+            <h2>HTML to Latex</h2>
+            <p>Many a times we need to embed a webpage in latex document. A HTML to Latex converter helps here. The main challenge is to process HTML and CSS documents to render it correctly in Latex.</p>
+
+            <h2>User Interface</h2>
+            <p>It is desirable to give an option for the user to choose his own latex template. This way the user has the flexibility to choose his own customized theme. The dynamic content produced is inserted at predefined positions in the template file. The user should mark these positions with special keywords. The approach is similar to ruby on rail's web template. This is illustrated in the following example.</p>
+
+            <pre>\documentclass[12pt]{article} \begin{document} %user_data \end{document}</pre>
+
+            <p>Here %user_data is the key word which is replaced by the dynamic content.</p>
+
+            <h2>Source Code</h2>
+            <p>You can get the source code of the project by cloning <a href="https://github.com/exlat/ExLat">https://github.com/exlat/ExLat</a></p>
     </div> <!-- /container -->
 
     <!-- Le javascript
